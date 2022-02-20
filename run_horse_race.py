@@ -1,0 +1,15 @@
+from horse_race.elementary_matrix_multiplication_e import run_elementary_benchmark
+from horse_race.elementary_matrix_transposed_e import run_transposed_benchmark
+from horse_race.recursive_copying_matrix_multiplication_e import run_copying_benchmark
+from horse_race.recursive_write_through_matrix_multiplication_e import run_write_through_benchmark
+from horse_race.tiled_matrix_multiplication_e import run_tiled_benchmark
+from horse_race.strassens_e import run_strassen_benchmark
+
+### run this file to run the horse race for all the implementations
+
+run_elementary_benchmark()
+run_transposed_benchmark()
+run_tiled_benchmark()
+run_copying_benchmark()
+run_write_through_benchmark()
+run_strassen_benchmark()

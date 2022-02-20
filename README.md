@@ -1,5 +1,21 @@
-# A-Comparative-Study-on-Matrix-Multiplication-Algorithms
-Matrix multiplication is the mathematical operation of multiplying two matrices. It is a fundamental linear algebra tool that is applied in several domains. This code project presents different algorithms to solve matrix multiplication of square matrices with side lengths defined as n = 2^x, with x > 0. In particular, we present and run experiments to compare the performance measured in time of six different matrix multiplication algorithms (see appendix A.3.2 for reference in the paper written for this project). This project was made for the Applied Algorithms Exam report. All implementations of the algorithms are written using C-Python.
+# TheMatrix
+**parameters.py** file contains parameters which are imported by all the other files. To add your own prefix to filename written out by running the experiments, 
+change the *file_name_prefix* variable. 
 
+To run the experiments for finding optimal s value for the tiled algorithm and the optimal m value for the write_through and strassen algorithms, 
+run the file **run_experiments.py** from the main directory.
 
-This project was made in collaboration with Katarzyna Toborek, ktob@itu.dk
+To run the horse race for all algorithms, run the file **run_horse_race.py** fro the main directory.
+
+Directory **experiments** contains the code for tiled, strassen's and write_through experiments for finding the optimal parameters, as well as the results 
+from running these experiments. It's subdirectory **plots** contains all plots.
+
+Directory **horse_race** contains the code for horse race experiments for all algorithms, along with the results.
+
+Directory **tests** contains the test files in jupyter notebook. 
+
+**matrix_implementations.py** contains all algorithms implementations.
+
+**measurement.py** contains the method to measure the runtime of the algorithms.
+
+**plotting.ipynb** allows to create plots from all the experiment results.
